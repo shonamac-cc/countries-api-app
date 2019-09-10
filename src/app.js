@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     new Vue({
         el: '#app',
         data: {
-            countries: []
+            countries: [],
         },
         mounted() {
             this.getCountry();
@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 .then(response => response.json())
                 .then(data => this.countries = data)
                 .catch(console.error);
+            },
+            getFlag: function() {
+                
             }
         }
     })

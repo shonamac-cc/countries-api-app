@@ -8,11 +8,13 @@
     <script src="./js/bundle.js"></script>
 </head>
 <body>
+    <h1>Countries App</h1>
     <main id="app">
-        <select id="country" v-if="countries" v-bind:value="countries">
+        <label for="country_select">Select a Country:</label>
+        <select id="country_select" v-if="countries" v-bind:value="countries">
             <option v-for="country in countries">{{ country.name }}</option>
         </select>
-        <button v-on:click="getCountry">Show Country</button>
+        
     </main>
     
 </body>
